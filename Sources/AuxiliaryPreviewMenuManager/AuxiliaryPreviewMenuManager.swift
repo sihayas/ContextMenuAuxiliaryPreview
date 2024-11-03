@@ -215,6 +215,8 @@ public class AuxiliaryPreviewMenuManager {
           attachingTo: auxiliaryPreviewParentView,
           enclosingView: contextMenuWindowRootView,
           preferredWidth: auxiliaryPreviewViewWidth,
+          marginLeading: auxiliaryPreviewConfig.marginLeading,
+          marginTrailing: auxiliaryPreviewConfig.marginTrailing,
           shouldPreferWidthAnchor: horizontalAlignment == .stretch
         );
         
