@@ -319,6 +319,7 @@ public class AuxiliaryPreviewModalManager: NSObject {
     // MARK: - Functions
 
     // -----------------
+    
   
     func present(
         viewControllerToPresent auxiliaryPreviewController: UIViewController,

@@ -329,6 +329,11 @@ public class AuxiliaryPreviewMenuManager {
     self.unSwizzleViews();
     self.isAuxiliaryPreviewVisible = false;
   };
+    
+    @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: gesture.view)
+        print("Pan gesture translation: \(translation)")
+    }
   
   public func attachAndAnimateInAuxiliaryPreviewTogetherWithContextMenu() {
     guard let manager = self.contextMenuManager,
@@ -394,6 +399,7 @@ public class AuxiliaryPreviewMenuManager {
     animator.startAnimation(
       afterDelay: transitionAnimationConfig.delay
     );
+      
   };
   
   public func detachAndAnimateOutAuxiliaryPreview(
